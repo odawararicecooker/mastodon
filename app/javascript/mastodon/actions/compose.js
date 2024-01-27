@@ -240,10 +240,10 @@ export function uploadCompose(files) {
       return;
     }
 
-    if (getState().getIn(['compose', 'poll'])) {
-      dispatch(showAlert(undefined, messages.uploadErrorPoll));
-      return;
-    }
+    // if (getState().getIn(['compose', 'poll'])) {
+    //   dispatch(showAlert(undefined, messages.uploadErrorPoll));
+    //   return;
+    // }
 
     dispatch(uploadComposeRequest());
 
